@@ -12,8 +12,8 @@
 
         <h1>List of Emails</h1>
 
-        <ul v-for="email in emails">
-            <li >
+        <ul>
+            <li v-for="email in emails"> <!-- stampa ogni elemento dell'array-->
                 {{email}}
             </li>
         </ul>

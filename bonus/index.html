@@ -12,8 +12,8 @@
 
         <h1>List of Emails</h1>
 
-        <ul v-for="email in emails" v-if="emails.length == 10"> <!-- stampa ogni elemento dell'array, solo quando è totalmente pieno-->
-            <li >
+        <ul v-if="emails.length == 10"> <!-- stampa ogni elemento dell'array, solo quando è totalmente pieno-->
+            <li v-for="email in emails">
                 {{email}}
             </li>
         </ul>
